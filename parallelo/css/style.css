@@ -1,61 +1,96 @@
-body{
-    margin: 0;
-    padding: 0;
+/* Remove as margens e o preenchimento padrão de todos os elementos do corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão ao redor da página */
+    padding: 0; /* Remove o preenchimento padrão dentro da página */
 }
 
-header{
-    background-color: white;
-    width: 100%;
-    height: 500px;
-    padding-top: 15px;
+/* Estilo para o cabeçalho da página */
+header {
+    background-color: white; /* Define a cor de fundo como branca */
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+    height: 500px; /* Define a altura do cabeçalho como 500 pixels */
+    padding-top: 15px; /* Adiciona um espaço de 15 pixels no topo do cabeçalho */
 }
 
-nav{
-    background-color: black;
-    min-width: 1200px;
-    max-width: 1400px;
-    height: 125px;
-    margin: 0 auto 0 auto;
-
-}
-nav #logo img{
-    height: 75px;
-}
-nav #logo{
-    margin: 23px;
-    float: left;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    
-}
-nav ul li{
-    list-style: none;
-    width: 25%;
-    text-align: center;
-    height: 100px;
-    transition: 0.5s;
+/* Estilo para os itens dentro da lista de navegação */
+nav ul li span {
+    color: #868686; /* Define a cor do texto como cinza claro */
+    font-size: 15px; /* Define o tamanho da fonte como 15 pixels */
+    margin: 5px 3px 0 0; /* Define a margem ao redor do texto, com 5 pixels em cima e 3 pixels à direita */
+    text-align: left; /* Alinha o texto à esquerda */
+    text-decoration: none; /* Remove qualquer sublinha (como sublinhado) do texto */
+    display: inline-block; /* Faz com que o elemento ocupe apenas o espaço necessário para o seu conteúdo */
 }
 
-nav ul li a{
-    text-decoration: none;
-    width: 100%;
-    padding: 40px 0 40px 0;
-    float: left;
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 23px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    overflow: hidden;
-
+/* Estilo para o texto dentro de um <span> quando o cursor passa por cima */
+span:hover {
+    color: #868686; /* Define a cor do texto como cinza claro quando o mouse passa por cima */
+    text-decoration: none; /* Garante que não há sublinhado no texto ao passar o mouse */
+    cursor: default; /* Define o cursor como padrão (não muda ao passar o mouse) */
 }
 
+/* Estilo para o elemento de navegação */
+nav {
+    background-color: black; /* Define a cor de fundo como preta */
+    min-width: 1200px; /* Define a largura mínima do nav como 1200 pixels */
+    max-width: 1400px; /* Define a largura máxima do nav como 1400 pixels */
+    height: 125px; /* Define a altura do nav como 125 pixels */
+    margin: 0 auto; /* Centraliza o nav horizontalmente na página */
+}
+
+/* Estilo para a imagem dentro do logo do nav */
+nav #logo img {
+    height: 75px; /* Define a altura da imagem como 75 pixels */
+}
+
+/* Estilo para o container do logo dentro do nav */
+nav #logo {
+    margin: 23px; /* Adiciona uma margem de 23 pixels ao redor do logo */
+    float: left; /* Faz com que o logo fique alinhado à esquerda do nav */
+}
+
+/* Estilo para a lista de itens de navegação */
+nav ul {
+    display: flex; /* Faz com que os itens da lista fiquem alinhados em linha (horizontalmente) */
+    flex-direction: row; /* Garante que os itens da lista sejam dispostos em linha, não em coluna */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilo para cada item da lista dentro da navegação */
+nav ul li {
+    list-style: none; /* Remove as bolinhas padrão dos itens da lista */
+    width: 25%; /* Define a largura de cada item da lista como 25% da largura total do nav */
+    text-align: center; /* Alinha o texto no centro do item da lista */
+    height: 100px; /* Define a altura de cada item da lista como 100 pixels */
+    transition: 0.5s; /* Adiciona uma transição suave de 0,5 segundos para qualquer mudança de estilo */
+}
+
+/* Estilo para os links dentro dos itens da lista */
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    width: 100%; /* Faz com que o link ocupe toda a largura do item da lista */
+    padding: 40px 0; /* Adiciona 40 pixels de preenchimento acima e abaixo do texto do link */
+    float: left; /* Faz com que o link se alinhe à esquerda do item da lista */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do link como 'Montserrat', com uma fonte genérica de sans-serif como reserva */
+    color: white; /* Define a cor do texto do link como branca */
+    font-size: 25px; /* Define o tamanho da fonte do link como 25 pixels */
+    cursor: pointer; /* Faz com que o cursor mude para uma mãozinha ao passar sobre o link */
+    transition: color 0.3s ease; /* Adiciona uma transição suave de 0,3 segundos para mudanças na cor do texto */
+    overflow: hidden; /* Garante que o conteúdo não saia do link */
+}
+
+/* Estilo para o link quando o cursor passa por cima */
 :hover {
-    color: orange;
-    text-decoration: line-through;
-    text-decoration-color: orange;
+    color: orange; /* Muda a cor do texto para laranja quando o cursor passa por cima */
+    text-decoration: line-through; /* Adiciona uma linha no meio do texto */
+    text-decoration-color: orange; /* Define a cor da linha como laranja */
+    overflow: hidden; /* Garante que o conteúdo não saia do link */
+}
+
+/* Estilo para a seção de trabalhos */
+#trabalhos {
+    background-color: blue; /* Define a cor de fundo como azul */
+    height: 100%; /* Faz com que a altura da seção ocupe 100% da altura do contêiner pai */
+    width: 100%; /* Faz com que a largura da seção ocupe 100% da largura do contêiner pai */
 }
