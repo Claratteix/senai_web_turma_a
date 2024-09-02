@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+header{
+    width: 100%;/*Largura do header*/
+    height: 100px;/*Altura do header*/
+    background-color:rgb(192, 219, 245);/* definir a cor de fundo do header*/
+    /*text-align: center;*/
+    display: flex; /*cria elementos com posição flexível na tela*/ 
+    flex-direction: row; /*posiciona os itens um so ao lado do outro como uma linha*/
+    align-items: center; /*alinha verticalmente ao centro*/
+    justify-content: center; /*alinha horizontalmento ao centro*/
+
+}
+header h1{
+    margin: 0;
+    color:white;
+    padding: 0;
+}
+nav ul li{
+    float: left; /*Faz com que os itens de lista dentro de um elemento <nav> flutuem para a esquerda.*/ 
+    list-style: none; /* Remove os marcadores ou números*/ 
+    text-align: center;
+    width: 20%;
+    font-size: 20px;
+    padding: 10px 0;
+  
+}
+nav{
+    height: 50px;
+    background-color:rgb(104, 134, 158);
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+}
+nav ul li a{
+    color:rgb(255, 255, 255);
+    transition: all 03;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+nav ul li:hover, nav ul li:hover a{
+    background-color: rgb(202, 218, 240);
+    color:rgb(88, 138, 185)
+}
+ul{
+    display: flex;
+}
+section div{
+    background-color: rgb(104, 134, 158);
+    width: 30%;
+    height: 150px;
+    float: left;
+    margin: 20px 1.6666666666%;
+}
+.outro div{
+    background-color:rgb(192, 219, 245);
+
+}
