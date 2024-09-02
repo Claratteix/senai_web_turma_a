@@ -1,0 +1,69 @@
+body{
+    width: 100%;/*Largura do body*/
+    height: 300px;/*Altura do body*/
+    background-color: black;/* definir a cor de fundo do body*/
+}
+
+head{
+    width: 100%;/*Largura do head*/
+    height: 300px;/*Altura do head*/
+    background-color:rgb(47, 61, 107)/* definir a cor de fundo do head*/
+}
+
+header{
+    width: 100%;/*Largura do header*/
+    height: 200px;/*Altura do header*/
+    background-color: rgb(79, 123, 173);/* definir a cor de fundo do header*/
+}
+
+nav{
+    width: 100%;/*Largura do nav*/
+    height: 200px;/*Altura do nav*/
+    background-color: #3d5597;/* definir a cor de fundo do nav*/
+}
+
+section{
+    width: 100%;/*Largura do section*/
+    height: 200px;/*Altura do section*/
+    background-color: rgb(84, 91, 184);/* definir a cor de fundo do section*/
+}
+
+footer{
+    width: 100%;/*Largura do footer*/
+    height: 200px;/*Altura do footer*/
+    background-color: rgb(105, 156, 204);/* definir a cor de fundo do footer*/
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 5px;
+/*Define um espaço ao redor de cada elemento*/
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+h4{
+    color :white;
+}
+h5{
+    color:white;
+}
+h6{
+    color: white;
+    /*Esses códigos(color) definem a cor do texto de cada elemento*/
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 5px; /*Define uma margem de 5 pixels no cabeçalho*/
+    font-family: Arial, sans-serif; /*Define a fonte do cabeçalho*/
+    text-align: center; /*Alhinha o texto para o centro*/
+    transition: all 0.3s ease; /*Aplica uma transição*/
+}
+nav ul li{
+    float: left; /*Faz com que os itens de lista dentro de um elemento <nav> flutuem para a esquerda.*/ 
+    list-style: none; /* Remove os marcadores ou números*/ 
+    padding: 10px; /* Ajusta o espaço entre palavras */
+}
