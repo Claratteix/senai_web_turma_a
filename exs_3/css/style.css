@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+
+header{
+    background-color: #84c6e3;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+header img{
+    height: 100px;
+}
+#logo_topo{
+    width: 20%;
+}
+.espaco{
+    width: 30%;
+}
+nav{
+    width: 50%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul li{
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    height: 100px;
+    transition: 0.5s;
+}
+nav ul li:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+nav ul li a{
+    text-decoration: none;
+    width: 100%;
+    padding: 40px 0 40px 0;
+    float: left;
+}
+section{
+    width: 100%;
+}
+section .form{
+    background-color: #dddd;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+}
