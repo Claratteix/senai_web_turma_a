@@ -60,45 +60,50 @@ nav {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
+#menu_principal :hover{
+    color: #ea7c27;
+
+}
 #menu_principal span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espaçamento entre os botões */
-    color: #868686;
+    color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     line-height: 20px;
     text-decoration: none;
     text-decoration-color: none;
-    display: inline-block;
-    margin-left: 10px;
+    margin-right: 5px;
+    order: -1;
 
 }
 span:hover{
-    color: #868686;
+    color: #ffffff;
     text-decoration: none;
     text-decoration-color: none;
     cursor: default;
+    font-weight: bold;
    
 }
+
 .rounded-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px; /* Largura do botão */
-    height: 60px; /* Altura do botão (deve ser igual à largura para uma forma quadrada com bordas arredondadas) */
+    width: 150px; /* Largura do botão */
+    height: 50px; /* Altura do botão (deve ser igual à largura para uma forma quadrada com bordas arredondadas) */
     border-radius: 15px; /* Arredonda os cantos do botão */
     background-color: #ea7c27; /* Cor de fundo dos botões */
     color: white;
     text-decoration: none;
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     font-weight: bold;
     text-align: center;
     line-height: 60px; /* Alinha o texto verticalmente no meio */
     transition: background-color 0.3s ease;
+    margin: 0 0 0 130px;
 }
 .rounded-button:hover {
     background-color: #dfa87d; /* Cor de fundo dos botões ao passar o mouse */
@@ -127,7 +132,7 @@ span:hover{
 
 .text-section {
     flex: 1;
-    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+    padding-right: 30px; /* Espaçamento entre o texto e a imagem */
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza o texto horizontalmente */
@@ -157,4 +162,74 @@ span:hover{
     max-width: 80%; /* Ajusta a imagem para ocupar parte da div */
     height: auto;
     border-radius: 8px;
+}
+
+.text-section {
+    margin: 20px; /* Ajuste a margem conforme necessário */
+}
+
+/* Estilo para o botão "Saiba mais..." */
+.saiba-mais-button {
+    display: inline-block;
+    margin-top: 20px; /* Espaçamento acima do botão */
+    padding: 10px 20px;
+    background-color: gray; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.saiba-mais-button:hover {
+    background-color: #999897; /* Cor de fundo quando o mouse está sobre o botão */
+}
+
+
+footer {
+    background-color: #f8f9fa; /* Cor de fundo do footer */
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #1c354f; /* Linha acima do conteúdo do footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-line {
+    height: 4px;
+    background-color: #1c354f; /* Cor da linha */
+    margin-bottom: 20px; /* Espaçamento abaixo da linha */
+}
+
+.footer-phrase {
+    font-size: 40px;
+    color: #333; /* Cor do texto da frase */
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.footer-text {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0 auto;
+    max-width: 100%; /* Ajusta a largura para caber no container */
+    padding: 0 20px; /* Espaçamento interno */
+}
+
+.footer-text p {
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.footer-image {
+    margin-top: 20px; /* Espaçamento acima da imagem */
+}
+
+.footer-image img {
+    max-width: 100%; /* Ajusta a largura da imagem para não exceder o container */
+    height: auto; /* Mantém a proporção da imagem */
 }
