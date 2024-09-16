@@ -1,109 +1,349 @@
-/* Remove a margem e o padding padrão do body, garantindo que não haja espaço extra ao redor do conteúdo */
 body {
     margin: 0;
     padding: 0;
+    /* Remove qualquer margem e preenchimento padrão do body para garantir que o layout ocupe toda a tela. */
 }
 
-/* Estiliza o elemento header com uma imagem de fundo e outras propriedades de layout */
 header {
-    background-image: url(../img/project-1.jpg); /* Define a imagem de fundo do cabeçalho */
-    background-repeat: no-repeat; /* A imagem de fundo não se repetirá */
-    background-size: cover; /* A imagem cobre todo o fundo do elemento */
-    background-position: center; /* A imagem é centralizada no fundo do elemento */
-    width: 100%; /* O cabeçalho ocupa toda a largura da tela */
-    height: 720px; /* Define a altura do cabeçalho */
-    padding-top: 15px; /* Adiciona um espaçamento interno no topo do cabeçalho */
+    background-image: url(../img/project-1.jpg);
+    /* Define a imagem de fundo do cabeçalho. */
+    background-repeat: no-repeat;
+    /* Evita que a imagem de fundo se repita. */
+    background-size: cover;
+    /* Faz com que a imagem cubra todo o cabeçalho, mantendo suas proporções. */
+    background-position: center;
+    /* Centraliza a imagem de fundo no cabeçalho. */
+    width: 100%;
+    /* Faz o cabeçalho ocupar toda a largura da tela. */
+    height: 720px;
+    /* Define a altura do cabeçalho. */
+    padding-top: 15px;
+    /* Adiciona um espaço no topo do cabeçalho. */
 }
 
-/* Estiliza elementos <span> dentro de <li> em uma lista de navegação */
+.header {
+    display: flex;
+    /* Usa Flexbox para o layout. */
+    justify-content: space-between;
+    /* Espalha os itens dentro do cabeçalho igualmente. */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro. */
+    background: #000;
+    /* Define a cor de fundo como preto. */
+    padding: 0 15px;
+    /* Adiciona um espaço de 15px nas laterais. */
+    height: 130px;
+    /* Define a altura do cabeçalho. */
+}
+
 nav ul li span {
-    color: #868686; /* Cor do texto */
-    font-size: 15px; /* Tamanho da fonte */
-    margin-right: 3px; /* Espaço à direita do elemento */
-    text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
-    text-decoration-color: none; /* Remove a cor da decoração do texto */
-    display: inline-block; /* Exibe o elemento como um bloco inline, permitindo a definição de dimensões e margens */
+    color: #868686;
+    /* Define a cor do texto do número em cinza claro. */
+    font-size: 15px;
+    /* Define o tamanho da fonte para o número. */
+    margin-right: 3px;
+    /* Adiciona um espaço de 3px à direita do número. */
+    text-decoration: none;
+    /* Remove qualquer decoração do texto, como sublinhado. */
+    text-decoration-color: none;
+    /* Não define uma cor para a decoração do texto. */
+    display: inline-block;
+    /* Faz com que o número se comporte como um bloco em linha. */
 }
 
-/* Estiliza o <span> quando está em estado de hover */
 span:hover {
-    color: #868686; /* Cor do texto ao passar o mouse */
-    text-decoration: none; /* Remove a decoração de texto ao passar o mouse */
-    text-decoration-color: none; /* Remove a cor da decoração do texto ao passar o mouse */
-    cursor: default; /* Muda o cursor para o padrão ao passar sobre o elemento */
+    color: #868686;
+    /* Mantém a cor cinza claro quando o mouse passa sobre o número. */
+    text-decoration: none;
+    /* Remove a decoração do texto ao passar o mouse. */
+    text-decoration-color: none;
+    /* Não define uma cor para a decoração do texto ao passar o mouse. */
+    cursor: default;
+    /* Define o cursor padrão ao passar sobre o número. */
 }
 
-/* Estiliza a navegação geral */
 nav {
-    background-color: black; /* Cor de fundo da navegação */
-    min-width: 1200px; /* Largura mínima da navegação */
-    max-width: 1400px; /* Largura máxima da navegação */
-    height: 125px; /* Altura da navegação */
-    margin: 0 auto; /* Centraliza horizontalmente o elemento com margens automáticas */
+    background-color: black;
+    /* Define a cor de fundo do menu de navegação como preto. */
+    min-width: 1200px;
+    /* Define a largura mínima do menu de navegação. */
+    max-width: 1400px;
+    /* Define a largura máxima do menu de navegação. */
+    height: 125px;
+    /* Define a altura do menu de navegação. */
+    margin: 0 auto;
+    /* Centraliza o menu de navegação horizontalmente. */
 }
 
-/* Estiliza o logo dentro da navegação */
 nav #logo img {
-    height: 75px; /* Define a altura da imagem do logo */
+    height: 75px;
+    /* Define a altura da imagem do logo. */
 }
 
-/* Estiliza o contêiner do logo */
 nav #logo {
-    margin: 23px; /* Espaçamento ao redor do logo */
-    float: left; /* Faz o logo flutuar à esquerda */
+    margin: 23px;
+    /* Adiciona uma margem ao redor do logo. */
+    float: left;
+    /* Faz o logo flutuar à esquerda. */
 }
 
-/* Estiliza a lista dentro da navegação */
 nav ul {
-    display: flex; /* Exibe a lista como um container flexível */
-    flex-direction: row; /* Alinha os itens da lista horizontalmente */
-    margin: 0; /* Remove a margem ao redor da lista */
-    padding: 0; /* Remove o padding ao redor da lista */
+    display: flex;
+    /* Usa Flexbox para o layout dos itens de menu. */
+    flex-direction: row;
+    /* Organiza os itens em linha. */
+    margin: 0;
+    /* Remove a margem padrão dos itens de lista. */
+    padding: 0;
+    /* Remove o preenchimento padrão dos itens de lista. */
 }
 
-/* Estiliza cada item da lista dentro da navegação */
 nav ul li {
-    list-style: none; /* Remove os marcadores de lista padrão */
-    width: 25%; /* Define a largura de cada item da lista como 25% do contêiner pai */
-    text-align: center; /* Centraliza o texto dentro do item da lista */
-    height: 100px; /* Define a altura do item da lista */
-    transition: 0.5s; /* Adiciona uma transição suave para mudanças de estilo */
+    list-style: none;
+    /* Remove os marcadores padrão dos itens de lista. */
+    width: 25%;
+    /* Define a largura de cada item de menu. */
+    text-align: center;
+    /* Centraliza o texto dos itens de menu. */
+    height: 100px;
+    /* Define a altura dos itens de menu. */
+    transition: 0.5s;
+    /* Adiciona uma transição suave para mudanças de estilo. */
 }
 
-/* Estiliza os links dentro dos itens da lista de navegação */
 nav ul li a {
-    text-decoration: none; /* Remove a decoração de texto, como sublinhado */
-    width: 100%; /* Define a largura do link como 100% do item da lista */
-    padding: 40px 0; /* Adiciona padding vertical ao link */
-    float: left; /* Faz o link flutuar à esquerda */
-    font-family: 'Montserrat', sans-serif; /* Define a fonte do link */
-    color: white; /* Cor do texto do link */
-    font-size: 25px; /* Tamanho da fonte do link */
-    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o link */
-    transition: color 0.3s ease; /* Adiciona uma transição suave para a cor do texto */
-    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o limite do elemento */
+    text-decoration: none;
+    /* Remove a decoração padrão dos links. */
+    width: 100%;
+    /* Faz o link ocupar toda a largura do item de menu. */
+    padding: 40px 0;
+    /* Adiciona preenchimento vertical de 40px aos links. */
+    float: left;
+    /* Faz o link flutuar à esquerda. */
+    font-family: 'Montserrat', sans-serif;
+    /* Define a fonte do link. */
+    color: white;
+    /* Define a cor do texto do link como branco. */
+    font-size: 25px;
+    /* Define o tamanho da fonte dos links. */
+    cursor: pointer;
+    /* Define o cursor como ponteiro ao passar o mouse sobre o link. */
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave para mudanças na cor do texto. */
+    overflow: hidden;
+    /* Garante que o conteúdo não ultrapasse os limites do link. */
 }
 
-/* O seletor :hover está incorreto aqui; deveria estar em um contexto mais específico */
-:hover {
-    color: orange; /* Define a cor do texto ao passar o mouse */
-    text-decoration: line-through; /* Adiciona um risco sobre o texto ao passar o mouse */
-    text-decoration-color: orange; /* Define a cor do risco do texto */
-    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o limite do elemento */
+nav ul li a:hover {
+    color: orange;
+    /* Muda a cor do texto para laranja quando o mouse passa sobre o link. */
+    text-decoration: line-through;
+    /* Adiciona uma linha sobre o texto quando o mouse passa sobre o link. */
+    text-decoration-color: orange;
+    /* Define a cor da linha de decoração como laranja. */
+    overflow: hidden;
+    /* Garante que o conteúdo não ultrapasse os limites do link. */
 }
 
-/* Estiliza a seção com uma imagem de fundo e define seu tamanho */
 section {
-    background-image: url(../img/divider-dark.png); /* Define a imagem de fundo da seção */
-    width: 100%; /* A seção ocupa toda a largura da tela */
-    height: 500px; /* Define a altura da seção */
-    background-repeat: repeat-x; /* Faz a imagem de fundo se repetir horizontalmente */
+    width: 100%;
+    /* Faz a seção ocupar toda a largura da tela. */
+    height: 120px;
+    /* Define a altura da seção. */
 }
 
-/* Estiliza o contêiner de trabalhos */
+.regua {
+    background-image: url(../img/divider-dark.png);
+    /* Define a imagem de fundo para a seção "regua". */
+    background-repeat: repeat-x;
+    /* Faz a imagem de fundo se repetir horizontalmente. */
+    padding-top: 100px;
+    /* Adiciona preenchimento no topo da seção. */
+}
+
+.icons {
+    background-color: rgb(255, 255, 255);
+    /* Define a cor de fundo da seção de ícones como branco. */
+    height: 100%;
+    /* Faz a altura da seção de ícones ocupar 100% da altura do contêiner pai. */
+    width: 345px;
+    /* Define a largura da seção de ícones. */
+    margin: 0 auto;
+    /* Centraliza a seção horizontalmente. */
+    display: flex;
+    /* Usa Flexbox para o layout dos ícones. */
+    flex-direction: row;
+    /* Organiza os ícones em linha. */
+}
+
+.icons .icon img {
+    width: 115px;
+    /* Define a largura das imagens dos ícones. */
+}
+
+.txt {
+    background-color: rgb(255, 255, 255);
+    /* Define a cor de fundo da seção de texto como branco. */
+    height: 100px;
+    /* Define a altura da seção de texto. */
+    width: 100%;
+    /* Faz a largura da seção de texto ocupar 100% da largura do contêiner pai. */
+}
+
+.txt {
+    width: 850px;
+    /* Define a largura da seção de texto. */
+    margin: 0 auto;
+    /* Centraliza a seção de texto horizontalmente. */
+}
+
+.txt h6 {
+    font-size: 28px;
+    /* Define o tamanho da fonte do texto. */
+    font-weight: 300;
+    /* Define o peso da fonte como leve. */
+    width: 80%;
+    /* Define a largura do elemento h6. */
+    display: inline-block;
+    /* Faz com que o elemento h6 se comporte como um bloco em linha. */
+    line-height: 40px;
+    /* Define a altura da linha do texto. */
+    font-family: 'Roboto Slab', serif;
+    /* Define a fonte do texto. */
+    text-align: center;
+    /* Centraliza o texto. */
+    margin: 0;
+    /* Remove a margem padrão do elemento. */
+    margin-left: 95px;
+    /* Adiciona uma margem esquerda. */
+    margin-top: 40px;
+    /* Adiciona uma margem superior. */
+}
+
+.divisoria {
+    background-color: white;
+    /* Define a cor de fundo da divisória como branco. */
+    height: 100px;
+    /* Define a altura da divisória. */
+    width: 100%;
+    /* Faz a largura da divisória ocupar 100% da largura do contêiner pai. */
+}
+
+.projetos {
+    text-align: center;
+    /* Centraliza o texto na seção de projetos. */
+    margin-top: 100px;
+    /* Adiciona uma margem superior para a seção de projetos. */
+}
+
+.projetos h1 {
+    background-image: url(../img/black-wave.png);
+    /* Define a imagem de fundo para o título h1. */
+    background-repeat: no-repeat;
+    /* Evita que a imagem de fundo se repita. */
+    background-position: center;
+    /* Centraliza a imagem de fundo. */
+    padding: 0 0 18px 0;
+    /* Adiciona um preenchimento na parte inferior do título. */
+    margin: -14px 0 0 0;
+    /* Remove a margem superior e define margens negativas para o título. */
+}
+
+h1 {
+    font-weight: 700;
+    /* Define o peso da fonte como negrito. */
+    font-family: 'Montserrat', sans-serif;
+    /* Define a fonte do título. */
+    font-size: 85px;
+    /* Define o tamanho da fonte do título. */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas. */
+    color: black;
+    /* Define a cor do texto como preto. */
+}
+
+h4 {
+    font-weight: 300;
+    /* Define o peso da fonte como leve. */
+    font-size: 24px;
+    /* Define o tamanho da fonte do subtítulo. */
+    font-family: 'Montserrat', sans-serif;
+    /* Define a fonte do subtítulo. */
+}
+
+.projetos h4 {
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas. */
+    letter-spacing: 11px;
+    /* Adiciona um espaçamento entre as letras. */
+    color: orange;
+    /* Define a cor do texto como laranja. */
+}
+
+.projetos span {
+    font-family: 'Montserrat', sans-serif;
+    /* Define a fonte do texto. */
+    font-size: 20px;
+    /* Define o tamanho da fonte do texto. */
+    margin: 12px 0 0 0;
+    /* Adiciona uma margem superior. */
+    display: inline-block;
+    /* Faz com que o texto se comporte como um bloco em linha. */
+    font-style: italic;
+    /* Define o texto como itálico. */
+}
+
+.projetos .mosaico {
+    min-width: 1200px;
+    /* Define a largura mínima do mosaico de projetos. */
+    max-width: 1400px;
+    /* Define a largura máxima do mosaico de projetos. */
+    margin: 0 auto;
+    /* Centraliza o mosaico horizontalmente. */
+}
+
+.projetos .mosaico .item {
+    height: 470px;
+    /* Define a altura dos itens no mosaico. */
+    width: 570px;
+    /* Define a largura dos itens no mosaico. */
+    background-image: url(../img/project-1.jpg);
+    /* Define a imagem de fundo para os itens do mosaico. */
+    background-size: contain;
+    /* Faz a imagem de fundo se ajustar ao tamanho do item mantendo suas proporções. */
+    background-position: center;
+    /* Centraliza a imagem de fundo. */
+}
+
+.projetos .mosaico .item:hover {
+    background-size: 110%;
+    /* Aumenta o tamanho da imagem de fundo ao passar o mouse. */
+    background-position: center;
+    /* Mantém a imagem de fundo centralizada. */
+}
+
+.zoom-effect {
+    height: 470px;
+    /* Define a altura do efeito de zoom. */
+    width: 570px;
+    /* Define a largura do efeito de zoom. */
+    background-position: center;
+    /* Centraliza a imagem de fundo do efeito de zoom. */
+    transition: transform 10s ease-in-out;
+    /* Define uma transição suave para o efeito de zoom. */
+}
+
+.zoom-effect:hover {
+    transform: scale(1.2);
+    /* Aumenta o tamanho do efeito de zoom ao passar o mouse. */
+}
+
+/*---------------------trabalhos-----------------------*/
 #trabalhos {
-    background-color: blue; /* Cor de fundo do contêiner de trabalhos */
-    height: 100%; /* Define a altura como 100% do elemento pai */
-    width: 100%; /* Define a largura como 100% do elemento pai */
+    background-color: blue;
+    /* Define a cor de fundo da seção de trabalhos como azul. */
+    height: 100%;
+    /* Faz a altura da seção de trabalhos ocupar 100% da altura do contêiner pai. */
+    width: 100%;
+    /* Faz a largura da seção de trabalhos ocupar 100% da largura do contêiner pai. */
 }
-
