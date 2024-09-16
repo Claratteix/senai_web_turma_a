@@ -1,235 +1,265 @@
+/* Estiliza o corpo da página */
 body { 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Define a fonte padrão para Arial, ou sans-serif se Arial não estiver disponível */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
 }
 
+/* Estiliza o cabeçalho (header) */
 header {
-    background-color: #1c354f;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    align-items: center;
-    height: 130px;
-    padding: 5px 20px; /* Ajuste o padding para adicionar espaço interno ao cabeçalho */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #1c354f; /* Define a cor de fundo do cabeçalho como um tom de azul escuro */
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda inferior cinza clara ao cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    height: 130px; /* Define a altura do cabeçalho */
+    padding: 20px 20px; /* Adiciona 20px de padding em todos os lados do cabeçalho */
+    display: flex; /* Utiliza o layout flexível para os itens dentro do cabeçalho */
+    justify-content: space-between; /* Distribui o espaço entre os itens de forma igual */
 }
 
+/* Estiliza o menu de navegação (nav) */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
+    display: flex; /* Utiliza o layout flexível para os itens dentro do nav */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens de forma igual */
+    padding: 0 15px; /* Adiciona padding de 15px nos lados esquerdo e direito */
+    width: 100%; /* Define a largura do nav para ocupar 100% do container pai */
 }
 
+/* Estiliza a área do logo */
 #logo {
-    display: flex;
-    align-items: center;
+    display: flex; /* Utiliza o layout flexível para os itens dentro do #logo */
+    align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
+/* Estiliza a imagem do logo */
 #logo img {
-    max-width: 120px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+    max-width: 120px; /* Define a largura máxima da imagem do logo como 120px */
+    height: auto; /* Mantém a proporção da altura da imagem */
+    margin-right: 15px; /* Adiciona um espaçamento de 15px à direita da imagem */
 }
 
+/* Estiliza o menu principal */
 #menu_principal {
-    display: flex;
-    align-items: center;
-    flex-grow: 1; /* Permite que o menu ocupe o espaço disponível */
-    justify-content: flex-start; /* Alinha os itens do menu ao início do espaço disponível */
+    display: flex; /* Utiliza o layout flexível para os itens dentro do #menu_principal */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    flex-grow: 1; /* Permite que o menu ocupe o espaço restante disponível */
+    margin: 0 0 0 450px; /* Adiciona uma margem à esquerda de 450px (para posicionar o menu mais à direita) */
 }
 
+/* Estiliza a lista do menu principal */
 #menu_principal ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 20px; 
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    display: flex; /* Utiliza o layout flexível para os itens dentro da lista */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    gap: 20px; /* Adiciona um espaço de 20px entre os itens da lista */
 }
 
+/* Estiliza cada item da lista do menu */
 #menu_principal li {
-    margin: 0 15px; /* Espaçamento entre itens do menu */
-    display: flex;
-    align-items: center;
+    margin: 0 15px; /* Adiciona uma margem horizontal de 15px entre os itens */
+    display: flex; /* Utiliza o layout flexível para os itens dentro de cada li */
+    align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
+/* Estiliza os links dentro do menu principal */
 #menu_principal a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff; /* Define a cor do texto dos links como branco */
+    font-weight: bold; /* Define o texto dos links como negrito */
+    font-size: 27px; /* Define o tamanho da fonte dos links como 27px */
+    transition: color 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a cor ao passar o mouse */
+    display: flex; /* Utiliza o layout flexível para os itens dentro dos links */
+    justify-content: space-between; /* Distribui o espaço entre os itens do link */
+    align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
-#menu_principal :hover{
-    color: #ea7c27;
-
+/* Estiliza o hover nos links do menu principal */
+#menu_principal :hover {
+    color: #ea7c27; /* Altera a cor do texto dos links para laranja ao passar o mouse */
 }
+
+/* Estiliza os spans dentro do menu principal */
 #menu_principal span {
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 20px;
-    text-decoration: none;
-    text-decoration-color: none;
-    margin-right: 5px;
-    order: -1;
-
-}
-span:hover{
-    color: #ffffff;
-    text-decoration: none;
-    text-decoration-color: none;
-    cursor: default;
-    font-weight: bold;
-   
+    color: #ffffff; /* Define a cor do texto dos spans como branco */
+    font-size: 19px; /* Define o tamanho da fonte dos spans como 19px */
+    font-weight: bold; /* Define o texto dos spans como negrito */
+    line-height: 20px; /* Define a altura da linha dos spans como 20px */
+    text-decoration: none; /* Remove a decoração de texto dos spans */
+    margin-right: 5px; /* Adiciona um espaçamento de 5px à direita dos spans */
+    order: -1; /* Coloca os spans antes dos outros itens flexíveis no layout */
 }
 
+/* Estiliza o hover nos spans do menu principal */
+span:hover {
+    color: #ffffff; /* Altera a cor do texto dos spans para branco ao passar o mouse */
+    text-decoration: none; /* Remove a decoração de texto dos spans ao passar o mouse */
+    cursor: default; /* Define o cursor como padrão ao passar o mouse sobre os spans */
+    font-weight: bold; /* Define o texto dos spans como negrito ao passar o mouse */
+}
+
+/* Estiliza os botões arredondados */
 .rounded-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px; /* Largura do botão */
-    height: 50px; /* Altura do botão (deve ser igual à largura para uma forma quadrada com bordas arredondadas) */
-    border-radius: 15px; /* Arredonda os cantos do botão */
-    background-color: #ea7c27; /* Cor de fundo dos botões */
-    color: white;
-    text-decoration: none;
-    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-    font-weight: bold;
-    text-align: center;
-    line-height: 60px; /* Alinha o texto verticalmente no meio */
-    transition: background-color 0.3s ease;
-    margin: 0 0 0 130px;
+    display: flex; /* Utiliza o layout flexível para os itens dentro do botão */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 165px; /* Define a largura do botão como 165px */
+    height: 65px; /* Define a altura do botão como 65px */
+    border-radius: 15px; /* Arredonda os cantos do botão com um raio de 15px */
+    background-color: #ea7c27; /* Define a cor de fundo do botão como laranja */
+    color: #fefefe; /* Define a cor do texto do botão como branco */
+    text-decoration: none; /* Remove a decoração de texto do botão (sublinhado) */
+    font-size: 25px; /* Define o tamanho da fonte do botão como 25px */
+    font-weight: bold; /* Define o texto do botão como negrito */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    line-height: 60px; /* Alinha verticalmente o texto no meio do botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para a cor de fundo ao passar o mouse */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
 }
+
+/* Estiliza o hover nos botões arredondados */
 .rounded-button:hover {
-    background-color: #dfa87d; /* Cor de fundo dos botões ao passar o mouse */
+    background-color: #dfa87d; /* Altera a cor de fundo do botão para um tom mais claro de laranja ao passar o mouse */
 }
 
+/* Estiliza a área do logo e do texto */
 #logo-and-text {
-    display: flex;
-    align-items: center;
+    display: flex; /* Utiliza o layout flexível para os itens dentro do #logo-and-text */
+    align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
+/* Estiliza o título dentro da área do logo e do texto */
 #logo-and-text h1 {
-    margin: 0;
-    font-size: 27px;
-    color: white;
-    width: 200px;
+    margin: 0; /* Remove a margem do título */
+    font-size: 29px; /* Define o tamanho da fonte do título como 29px */
+    color: white; /* Define a cor do texto do título como branco */
+    width: 200px; /* Define a largura do título como 200px */
 }
 
-/* Estilo para a área de texto e imagem */
+/* Estiliza a área de conteúdo principal (texto e imagem) */
 .container {
-    display: flex;
-    height: calc(100vh - 140px); /* Ajusta a altura para ocupar o espaço restante da tela após o header */
-    align-items: center;
-    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Utiliza o layout flexível para os itens dentro do container */
+    height: calc(100vh - 140px); /* Ajusta a altura para ocupar o espaço restante da tela após o cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 20px; /* Adiciona padding interno de 20px */
     box-sizing: border-box; /* Inclui padding na largura e altura total */
 }
 
+/* Estiliza a seção de texto */
 .text-section {
-    flex: 1;
-    padding-right: 30px; /* Espaçamento entre o texto e a imagem */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o texto horizontalmente */
+    flex: 1; /* Permite que a seção de texto ocupe o espaço disponível */
+    padding-right: 30px; /* Adiciona padding à direita para criar um espaço entre o texto e a imagem */
+    display: flex; /* Utiliza o layout flexível para os itens dentro da seção de texto */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
     text-align: center; /* Centraliza o texto dentro da div */
 }
 
+/* Estiliza o título dentro da seção de texto */
 .title {
-    font-size: 40px; /* Tamanho do título ajustado */
-    font-weight: bold;
-    margin: 0;
+    font-size: 60px; /* Define o tamanho da fonte do título como 60px */
+    font-weight: bold; /* Define o texto do título como negrito */
+    margin: 0; /* Remove a margem do título */
 }
 
+/* Estiliza a descrição dentro da seção de texto */
 .description {
-    font-size: 20px; /* Tamanho da descrição ajustado */
-    margin: 10px 0 0;
-    color: #666;
+    font-size: 30px; /* Define o tamanho da fonte da descrição como 30px */
+    margin: 10px 0 0; /* Adiciona uma margem de 10px no topo e remove a margem nos outros lados */
+    color: #666; /* Define a cor do texto da descrição como cinza escuro */
 }
 
+/* Estiliza a seção de imagem */
 .image-section {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; /* Alinha a imagem ao lado direito */
-    padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+    flex: 1; /* Permite que a seção de imagem ocupe o espaço disponível */
+    display: flex; /* Utiliza o layout flexível para os itens dentro da seção de imagem */
+    justify-content: flex-end; /* Alinha a imagem ao lado direito da seção */
+    padding-left: 20px; /* Adiciona padding à esquerda para criar um espaço entre a imagem e o texto */
 }
 
+/* Estiliza a imagem dentro da seção de imagem */
 .image-section img {
-    max-width: 80%; /* Ajusta a imagem para ocupar parte da div */
-    height: auto;
-    border-radius: 8px;
+    max-width: 80%; /* Define a largura máxima da imagem como 80% do container */
+    height: auto; /* Mantém a proporção da altura da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem com um raio de 8px */
 }
 
+/* Estiliza a seção de texto dentro da container */
 .text-section {
-    margin: 20px; /* Ajuste a margem conforme necessário */
+    margin: 20px; /* Adiciona uma margem de 20px ao redor da seção de texto */
 }
 
-/* Estilo para o botão "Saiba mais..." */
+/* Estiliza o botão "Saiba mais..." */
 .saiba-mais-button {
-    display: inline-block;
-    margin-top: 20px; /* Espaçamento acima do botão */
-    padding: 10px 20px;
-    background-color: gray; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    text-decoration: none; /* Remove sublinhado do link */
-    border-radius: 5px; /* Cantos arredondados */
-    font-size: 16px; /* Tamanho da fonte */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    margin-top: 20px; /* Adiciona um espaçamento acima do botão */
+    padding: 20px 30px; /* Adiciona padding interno de 20px em cima e embaixo, e 30px nos lados */
+    background-color: gray; /* Define a cor de fundo do botão como cinza */
+    color: white; /* Define a cor do texto do botão como branco */
+    text-decoration: none; /* Remove a decoração de texto do botão (sublinhado) */
+    border-radius: 5px; /* Arredonda os cantos do botão com um raio de 5px */
+    font-size: 22px; /* Define o tamanho da fonte do botão como 22px */
+    transition: background-color 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a cor de fundo ao passar o mouse */
 }
 
+/* Estiliza o hover no botão "Saiba mais..." */
 .saiba-mais-button:hover {
-    background-color: #999897; /* Cor de fundo quando o mouse está sobre o botão */
+    background-color: #999897; /* Altera a cor de fundo do botão para um tom mais claro de cinza ao passar o mouse */
 }
 
-
+/* Estiliza o rodapé (footer) */
 footer {
-    background-color: #f8f9fa; /* Cor de fundo do footer */
-    padding: 20px;
-    text-align: center;
-    border-top: 4px solid #1c354f; /* Linha acima do conteúdo do footer */
+    background-color: #fefefe; /* Define a cor de fundo do rodapé como branco */
+    padding: 20px; /* Adiciona padding interno de 20px */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    border-top: 4px solid #1c354f; /* Adiciona uma borda superior de 4px de cor azul escuro */
 }
 
+/* Estiliza o conteúdo dentro do rodapé */
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Define a largura máxima do conteúdo do rodapé como 1200px */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
 }
 
+/* Estiliza a linha no rodapé */
 .footer-line {
-    height: 4px;
-    background-color: #1c354f; /* Cor da linha */
-    margin-bottom: 20px; /* Espaçamento abaixo da linha */
+    height: 4px; /* Define a altura da linha como 4px */
+    background-color: #1c354f; /* Define a cor da linha como azul escuro */
+    margin-bottom: 20px; /* Adiciona um espaçamento de 20px abaixo da linha */
 }
 
+/* Estiliza a frase no rodapé */
 .footer-phrase {
-    font-size: 40px;
-    color: #333; /* Cor do texto da frase */
-    margin: 10px 0;
-    font-weight: bold;
+    font-size: 40px; /* Define o tamanho da fonte da frase como 40px */
+    color: #333; /* Define a cor do texto da frase como cinza escuro */
+    margin: 10px 0; /* Adiciona uma margem de 10px em cima e embaixo da frase */
+    font-weight: bold; /* Define o texto da frase como negrito */
 }
 
+/* Estiliza o texto dentro do rodapé */
 .footer-text {
     text-align: left; /* Alinha o texto à esquerda */
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
     max-width: 100%; /* Ajusta a largura para caber no container */
-    padding: 0 20px; /* Espaçamento interno */
+    padding: 0 20px; /* Adiciona padding interno de 20px nos lados */
 }
 
+/* Estiliza os parágrafos dentro do rodapé */
 .footer-text p {
-    margin-bottom: 15px; /* Espaçamento entre parágrafos */
-    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Adiciona um espaçamento de 10px abaixo dos parágrafos */
+    line-height: 1.6; /* Define o espaçamento entre linhas para melhorar a legibilidade */
+    font-size: 22px; /* Define o tamanho da fonte dos parágrafos como 22px */
+    color: #333; /* Define a cor do texto dos parágrafos como cinza escuro */
 }
 
+/* Estiliza a área da imagem no rodapé */
 .footer-image {
-    margin-top: 20px; /* Espaçamento acima da imagem */
+    margin-top: 20px; /* Adiciona um espaçamento de 20px acima da imagem */
 }
 
+/* Estiliza a imagem dentro da área de imagem do rodapé */
 .footer-image img {
     max-width: 100%; /* Ajusta a largura da imagem para não exceder o container */
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto; /* Mantém a proporção da altura da imagem */
 }
