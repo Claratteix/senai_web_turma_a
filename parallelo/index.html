@@ -1,62 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<!-- Declaração do tipo de documento. Diz que esse arquivo é HTML5, o que ajuda o navegador a entender como renderizar a página. -->
+<html lang="pt=br">
+<!-- A tag <html> inicia o documento HTML. O atributo "lang" define o idioma da página. Aqui tem um erro de digitação; o correto é "pt-BR" para Português do Brasil. -->
+
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
-    <title>Parallelo</title> <!-- Define o título da aba do navegador como "Parallelo" -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilo CSS externo que está na pasta "css" -->
+    <!-- A tag <head> contém informações sobre a página que não são exibidas diretamente no corpo da página. -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres da página como UTF-8, que suporta uma ampla gama de caracteres. -->
+    <title>
+        Parallelo
+    </title>
+    <!-- Define o título da página que aparece na aba do navegador. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link para o arquivo de estilo CSS que define a aparência da página. -->
 </head>
+
 <body>
-    <!-- Início do corpo da página -->
+    <!-- A tag <body> contém todo o conteúdo visível da página. -->
+
     <header>
-        <!-- Cabeçalho da página -->
+        <!-- A tag <header> é usada para definir o cabeçalho da página. Normalmente contém elementos como o logo e o menu de navegação. -->
         <nav>
-            <!-- Navegação principal da página -->
+            <!-- A tag <nav> define a área de navegação da página. -->
             <div id="logo">
-                <!-- Container para o logo -->
+                <!-- <div> com o id "logo" é usado para colocar o logo do site. -->
                 <a href="index.html">
-                    <!-- Link que leva à página inicial -->
-                    <img src="img/logo-white.png" alt=""> <!-- Imagem do logo que está na pasta "img" com uma descrição alternativa vazia -->
+                    <!-- O <a> é um link que leva à página inicial quando clicado. -->
+                    <img src="img/logo-white.png" alt="">
+                    <!-- <img> exibe a imagem do logo. O atributo "alt" fornece um texto alternativo caso a imagem não carregue. -->
                 </a>
             </div>
-             <div id="menu_principal">
-            <ul>
-                <!-- Lista de itens do menu de navegação -->
-                <li>
-                    <a href="#">
-                        <span>01.</span>Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>02.</span>Trabalhos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>03.</span>Scaneamento
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>04.</span>Sobre
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>05.</span>Lançamentos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>06.</span>Contato
-                    </a>
-                </li>
-            </ul>
-          </div>
+            <div id="menu_principal">
+                <!-- <div> com o id "menu_principal" é onde está o menu de navegação. -->
+                <ul>
+                    <!-- <ul> cria uma lista não ordenada para os itens do menu. -->
+                    <li><a href="#"><span>01.</span>Home</a></li>
+                    <!-- <li> cria um item na lista. Cada item do menu é um link com um número e o nome da seção. -->
+                    <li><a href="#"><span>02.</span>Trabalhos</a></li>
+                    <li><a href="#"><span>03.</span>Scaneamento</a></li>
+                    <li><a href="#"><span>04.</span>Sobre</a></li>
+                    <li><a href="#"><span>05.</span>Lançamentos</a></li>
+                    <li><a href="#"><span>06.</span>Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-     <section>
-        <!-- Seção de conteúdo, atualmente vazia -->
+
+    <section class="regua">
+        <!-- A tag <section> é usada para agrupar um conjunto de conteúdo tematicamente relacionado. Aqui, "regua" pode ser um nome de classe para estilizar essa seção. -->
+        <div class="icons">
+            <!-- <div> com a classe "icons" contém ícones. -->
+            <div class="icon"><img src="img/icones/pen.png"></div>
+            <!-- Cada <div> com a classe "icon" contém uma imagem de ícone. -->
+            <div class="icon"><img src="img/icones/square.png"></div>
+            <div class="icon"><img src="img/icones/pens-in-cup.png"></div>
+        </div>
+
+        <div class="txt">
+            <!-- <div> com a classe "txt" contém um texto. -->
+            <h6>
+                <!-- <h6> é um cabeçalho de nível 6, geralmente usado para subtítulos menores. -->
+                "A arquitetura é a arte que determina a identidade do nosso tempo e melhora a vida das pessoas." <i>Santiago Calatrava</i>
+                <!-- Citação sobre arquitetura com o nome do autor em itálico. -->
+            </h6>
+        </div>
+
+        <div class="projetos">
+            <!-- <div> com a classe "projetos" contém informações sobre projetos. -->
+            <h4><i>Nossos</i></h4>
+            <!-- <h4> é um cabeçalho de nível 4 para o título "Nossos". O texto está em itálico. -->
+            <h1><i>Projetos</i></h1>
+            <!-- <h1> é o cabeçalho principal da seção, destacando o título "Projetos". -->
+            <img src="img/black-wave.png"><br>
+            <!-- Imagem decorativa com um quebra de linha após ela. -->
+            <span><i>Concebemos ideias e concretizamos sonhos</i></span>
+            <!-- <span> é um elemento em linha usado para estilizar o texto "Concebemos ideias e concretizamos sonhos". -->
+            <div class="mosaico">
+                <!-- <div> com a classe "mosaico" pode ser um container para um layout em mosaico. -->
+                <div class="item">
+                    <!-- <div> com a classe "item" representa um item dentro do mosaico. -->
+                    <div class="plus">
+                        <!-- <div> com a classe "plus" pode ser um botão ou elemento clicável. -->
+                        <img src="'img/plus.png">
+                        <!-- Imagem do ícone de "mais". Note que há uma aspa simples extra em torno do caminho da imagem, o que pode ser um erro. -->
+                        <div class="zoom-effect">
+                            <!-- <div> com a classe "zoom-effect" pode ser usado para criar um efeito de zoom quando se passa o mouse sobre o ícone. Atualmente, está vazio. -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
